@@ -21,6 +21,7 @@ namespace _1
             //int[] array = { 1, 2, 1 };
             
             Console.WriteLine(calculator.Avarage(new int[] { 1, 2, 3,4  }));
+            Console.WriteLine(calculator.AvarageParams(1, 2, 3, 4));
 
 
 

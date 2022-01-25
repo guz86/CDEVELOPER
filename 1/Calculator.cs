@@ -37,5 +37,15 @@ namespace _1
             }
             return sum / array.Length;
         }
+
+        public double AvarageParams(params int[] array)
+        {
+            double sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            return sum / array.Length;
+        }
     }
 }
