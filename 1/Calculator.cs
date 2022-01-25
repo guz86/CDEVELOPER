@@ -26,5 +26,16 @@ namespace _1
         {
             return 0.5 * a * h;
         }
+
+        // среднее
+        public double Avarage(int[] array)
+        {
+            double sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum+=array[i];
+            }
+            return sum / array.Length;
+        }
     }
 }
