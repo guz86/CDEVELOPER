@@ -8,12 +8,23 @@ namespace _1
 {
     class Calculator
     {
+
+        // S= p⋅(p−a)⋅(p−b)⋅(p−c)
+        // где aa, bb, cc — стороны, pp — полупериметр,
+        // который можно найти по формуле: p = (a + b + c) \div 2p=(a+b+c)÷2
+
         public double CalcTriangeSquare(double ab, double bc, double ca)
         {
             double p = (ab + bc + ca) / 2;
+            return Math.Sqrt(p * (p - ab) * (p - bc) * (p - ca));
+            //double square = Math.Sqrt(p*(p - ab) * (p - bc) * (p - ca));
+            //return square;
+        }
 
-            double square = Math.Sqrt(p*(p - ab) * (p - bc) * (p - ca));
-            return square;
+        // половины основания треугольника (a) на его высоту (h)
+        public double CalcTriangeSquare(double a, double h)
+        {
+            return 0.5 * a * h;
         }
     }
 }
