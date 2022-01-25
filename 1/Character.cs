@@ -6,19 +6,17 @@ using System.Threading.Tasks;
 
 namespace _1
 {
-    class Character
+     class Character
     {
         private int _health = 100;
         public void Hit(int damage)
         {
-            if (damage >=_health)
+            if (damage > _health)
             {
-                _health = 0;
+                _health = damage;
             }
-            else
-            {
+            
                 _health -= damage;
-            }
             
         }
         public void ShowInfo()

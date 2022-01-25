@@ -7,8 +7,10 @@ namespace _1
         static void Main(string[] args)
         {
             Character character = new Character();
-            character.Hit(90);
+            character.Hit(110);
             character.ShowInfo();
+            
+
         }
     }
 }
