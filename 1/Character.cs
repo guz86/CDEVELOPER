@@ -8,10 +8,18 @@ namespace _1
 {
     class Character
     {
-        int _health = 100;
+        private int _health = 100;
         public void Hit(int damage)
         {
-            _health -= damage;
+            if (damage >=_health)
+            {
+                _health = 0;
+            }
+            else
+            {
+                _health -= damage;
+            }
+            
         }
         public void ShowInfo()
         {
