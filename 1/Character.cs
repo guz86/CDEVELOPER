@@ -6,22 +6,25 @@ using System.Threading.Tasks;
 
 namespace _1
 {
-     class Character
+    class Character
     {
         private int _health = 100;
+
+        public int Health { get { return _health; } private set { _health = value; } }
         public void Hit(int damage)
         {
             if (damage > _health)
             {
-                _health = damage;
+                Health = damage;
             }
-            
-                _health -= damage;
-            
+            Health -= damage;
+
         }
         public void ShowInfo()
         {
-            Console.WriteLine(_health);
+            Console.WriteLine($"Health: {Health}");
         }
+
+
     }
 }

@@ -7,9 +7,9 @@ namespace _1
         static void Main(string[] args)
         {
             Character character = new Character();
-            character.Hit(110);
+            character.Hit(80);
             character.ShowInfo();
-            
+            Console.WriteLine(character.Health);
 
         }
     }
