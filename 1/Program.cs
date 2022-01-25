@@ -6,7 +6,9 @@ namespace _1
     {
         static void Main(string[] args)
         {
-            
+            Character character = new Character();
+            character.Hit(10);
+            character.ShowInfo();
         }
     }
 }
