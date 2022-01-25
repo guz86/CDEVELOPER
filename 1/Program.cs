@@ -11,6 +11,11 @@ namespace _1
             character.ShowInfo();
             Console.WriteLine(character.Health);
 
+            // 6
+
+
+
+
         }
     }
 }
