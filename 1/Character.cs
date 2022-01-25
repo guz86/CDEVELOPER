@@ -8,12 +8,13 @@ namespace _1
 {
     class Character
     {
-        private int _health = 100;
+        // private int _health = 100;
 
-        public int Health { get { return _health; } private set { _health = value; } }
+        //public int Health { get { return _health; } private set { _health = value; } }
+        public int Health { get; private set; } = 100;
         public void Hit(int damage)
         {
-            if (damage > _health)
+            if (damage > Health)
             {
                 Health = damage;
             }
